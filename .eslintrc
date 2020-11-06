@@ -1,0 +1,63 @@
+{
+  "extends": "standard-with-typescript",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "env": {
+    "jest": true
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.ts",
+        "*.tsx"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "rules": {
+        "@typescript-eslint/array-type": "off",
+        "@typescript-eslint/camelcase": "off",
+        "@typescript-eslint/consistent-type-assertions": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/naming-convention": "off",
+        "@typescript-eslint/no-base-to-string": "off",
+        "@typescript-eslint/no-dynamic-delete": "off",
+        "@typescript-eslint/no-floating-promises": "off",
+        "@typescript-eslint/no-implied-eval": "off",
+        "@typescript-eslint/no-misused-promises": "off",
+        "@typescript-eslint/no-var-requires":  "off",
+        "@typescript-eslint/promise-function-async": "off",
+        "@typescript-eslint/quotes": "off",
+        "@typescript-eslint/require-await": "off",
+        "@typescript-eslint/restrict-plus-operands": 0,
+        "@typescript-eslint/restrict-template-expressions": 0,
+        "@typescript-eslint/return-await": 0,
+        "@typescript-eslint/space-before-function-paren": "off",
+        "@typescript-eslint/strict-boolean-expression": "off",
+        "@typescript-eslint/strict-boolean-expressions": "off",
+        "comma-dangle": "off",
+        "handle-callback-err": "off",
+        "lines-between-class-members": 2,
+        "new-cap": "off",
+        "node/no-deprecated-api": "off",
+        "no-prototype-builtins": "off",
+        "no-unused-expressions": 0,
+        "padding-line-between-statements": [
+          "error",
+          {
+            "blankLine": "always",
+            "prev": ["function", "class", "const", "let"],
+            "next": ["function", "class"] },
+          {
+            "blankLine": "always",
+            "prev": ["import"],
+            "next": ["function", "class", "const", "let", "var", "export"] },
+          {
+            "blankLine": "always",
+            "prev": "*",
+            "next": ["switch"]
+          }
+        ]
+      }
+    }
+  ]
+}

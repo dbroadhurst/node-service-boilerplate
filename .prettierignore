@@ -1,0 +1,17 @@
+# MODULE SPECIFIC
+
+# GENERIC
+.idea/
+.vscode/
+.VSCodeCounter/
+
+node_modules/
+
+.nyc/
+.nyc_output/
+
+lib/
+
+*.pem
+*.log
+*.error*

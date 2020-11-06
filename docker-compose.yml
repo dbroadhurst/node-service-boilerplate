@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  service:
+    image: ts-service:latest
+    restart: unless-stopped
+    container_name: ts-service
+    environment:
+      TEST: 'test-env'

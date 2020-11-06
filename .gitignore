@@ -1,0 +1,18 @@
+# https://help.github.com/ignore-files/
+
+dist/
+lib/
+
+.idea/
+.vscode/
+.VSCodeCounter/
+
+node_modules/
+coverage/
+
+.nyc/
+.nyc_output/
+
+*.pem
+*.log
+*.error*
